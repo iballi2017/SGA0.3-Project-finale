@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile-page-rep</title>
+	<link rel="stylesheet "type="text/css" href="mobile-page-rep.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<style type="text/css">
+	/*resetting browser default style*/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+/*my CODE*/
+
+body{
+    background-color: #ccc;
+}
+a{
+    text-decoration-line: none;
+    color: #ccc;
+}
+a:hover{
+    text-decoration: underline;
+    color:#00f;
+}
+.outline{
+    width:400px;
+    height:670px;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    margin-bottom: 20px;
+}
+.outline .fbk{
+    position: absolute;
+    width:25px;
+    height: 25px;
+    opacity: 0.3;
+    margin: 70px 0 0 360px;
+}
+.outline .fbk:hover{
+    opacity: 1;
+}
+.outline .twi{
+    position: absolute;
+    width:25px;
+    height: 25px;
+    opacity: 0.3;
+    margin: 113px 0 0 360px;
+}
+.outline .twi:hover{
+    opacity: 1;
+}
+.outline .lin{
+    position: absolute;
+    width:25px;
+    height: 25px;
+    opacity: 0.3;
+    margin: 155px 0 0 360px;
+}
+.outline .lin:hover{
+    opacity: 1;
+}
+.menu-icon{
+    background-color: #000;
+    width:50px;
+    height: 50px;
+    float:right;
+}
+.menu-icon .hr1{
+    color:#fff;
+    margin: 16px 3px 0 12px;
+    border-width: 2px;
+    width:16px;
+}
+.menu-icon .hr2{
+    color:#fff;
+    margin: -10px 3px 0 12px;
+    border-width: 2px;
+    width:25px;
+}
+.menu-icon .hr3{
+    color:#fff;
+    margin: -10px 3px 0 12px;
+    border-width: 2px;
+    width:20px;
+}
+img{
+    width: 60px;
+    height: 90px;
+}
+.img{
+    width:400px;
+    height: 120px;
+  /*  background-color:#ccc; */
+    margin: 10px 0 0 0;
+    float: right;
+    
+}
+.img img{
+    border-radius: 10px;
+    width:100px;
+    height: 120px;
+    margin: 0 0 0 60px;
+}
+.img .author{
+    font-family: 'Poppins', sans-serif;
+    margin: -100px 0 0 180px;
+    font-size: 22px;
+}
+.img .author .job{
+    margin-top:10px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.img .author .job .follow{
+    margin-top:15px;
+    margin-bottom: 15px;
+ }
+.follow-line{
+    position:relative;
+    margin-left: 64px;
+    margin-top:-25px;
+    width: 100px;
+ }
+ .follow-line hr{
+    border-color: rgb(223, 216, 216);
+ }
+ .follow-line2{
+    position:relative;
+    margin-left: -25px;
+    margin-top:145px;
+    width: 100px;
+ }
+ .follow-line2 hr{
+    border-color: rgb(223, 216, 216);
+ }
+
+.interest{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    margin: 300px 0 0 60px;
+    font-size: 15px;
+}
+/*.interest-line{
+    size: 100px;
+    margin: 260px 0 0 60px;
+    position: absolute;
+    background-color: blue;
+}*/
+.outline .response-div{
+ /*   background-color: #ccc;  */
+    position: absolute;
+    margin: 195px 0 0 0;
+    width: 100%;
+    height: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+.outline .response-div a{
+ text-decoration: none;
+}
+.outline .response-div .responses .first{
+    position: absolute;
+    margin: 20px 0 0 60px;
+    font-size: 14px;
+}
+.outline .response-div .responses .first :hover{
+    font-size: 18px;
+    color: #111;
+}
+.outline .response-div .responses .first .visitor{
+    opacity: 0.8;
+    color: #ccc;
+}
+.outline .response-div .responses .first .visitor:hover{
+    opacity: 1;
+    font-size: 18px;
+    color: #111;
+}
+.outline .response-div .responses .first .num{
+    font-size: 19px;
+}
+.outline .response-div .responses .second{
+    position: absolute;
+    margin: 20px 0 0 175px;
+    font-size: 14px;
+}
+.outline .response-div .responses .second:hover{
+     font-size: 20px;
+}
+.outline .response-div .responses .second .place{
+    opacity: 0.8;
+    color: #ccc;
+}
+.outline .response-div .responses .second .place:hover{
+    opacity: 1;
+    font-size: 18px;
+    color: #111;
+}
+.outline .response-div .responses .second .num{
+    font-size: 19px;
+}
+.outline .response-div .responses .third{
+    position: absolute;
+    margin: 20px 0 0 300px;
+    font-size: 14px;
+}
+.outline .response-div .responses .third:hover{
+     font-size: 20px;
+}
+.outline .response-div .responses .third .review{
+    opacity: 0.8;
+    color: #ccc;
+}
+.outline .response-div .responses .third .review:hover{
+    opacity: 1;
+    font-size: 18px;
+    color: #111;
+}
+.outline .response-div .responses .third .num{
+    font-size: 19px;
+}
+/*.box{
+    width: 100px;
+    height: 60px;
+    background-color: rgba(255, 0, 0, 0.3);
+    position: absolute;
+    border-radius: 3px;
+}
+#box1{
+    margin: 10px 0 0 50px;
+}
+#box2{
+    margin: 10px 0 0 160px;
+}
+#box3{
+    margin: 10px 0 0 280px;
+}*/
+.horizontal-line{
+    position: absolute;
+    height: 30px;
+    width: 85%;
+    margin: 0 auto;
+    margin: 260px 0 0 60px;
+}
+.horizontal-line hr{
+    border-color: rgb(252, 248, 248);
+}
+.content{
+    margin-top: 340px;
+    height: 100px;
+}
+.restaurant{
+    background-image: url("https://i.imgur.com/ZZvmdLu.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+    width:100px;
+    height: 130px;
+    margin: 0 0 0 60px;
+}
+.restaurant:hover{
+    border: 1px solid #000;  
+}
+.restaurant p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 90px;
+}
+.shopping{
+    background-image: url("https://i.imgur.com/TYdFNkq.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+    width:100px;
+    height: 130px;
+    margin: 0 0 0 280px;
+}
+.shopping:hover{
+    border: 1px solid #000;  
+}
+.shopping p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 90px;
+}
+.hostel{
+    background-image: url("https://i.imgur.com/0MpBNQl.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+    width:100px;
+    height: 130px;
+    margin: 0 0 0 170px;
+}
+.hostel:hover{
+    border: 1px solid #000;  
+}
+.hostel p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 90px;
+}
+.visit{
+    background-image: url("https://i.imgur.com/CDesNIU.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+    width:100px;
+    height: 130px;
+    margin: 140px 0 0 60px;
+}
+.visit:hover{
+    border: 1px solid #000;  
+}
+.visit p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 90px;
+}
+.art{
+    background-image: url("https://i.imgur.com/AIX1MRM.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+    width:100px;
+    height: 130px;
+    margin: 140px 0 0 170px;
+}
+.art:hover{
+    border: 1px solid #000;  
+}
+.art p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color:#fff;
+    font-weight: 400;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 90px;
+}
+.photo{
+    background-image: url("https://i.imgur.com/BVtE8sW.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 10px;
+    width:100px;
+    height: 130px;
+    text-align: center;
+    margin: 140px 0 0 280px;
+}
+.photo:hover{
+    border: 1px solid #000;  
+}
+.photo p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:#fff;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 90px;
+}
+.bottom-nav{
+    background-color: #fff;
+    border-top: 0.5px solid rgb(240, 236, 236);
+    height: 50px;
+    margin-top: 228px;
+}
+.bottom-nav .bottom-content{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    margin-top: 60px;
+}
+.bottom-nav a .home-icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 6px 0 0 25px;
+    opacity: 0.8;
+}
+.bottom-nav a .home-icon:hover{
+    opacity: 1;
+}
+.bottom-nav .search-icon{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 6px 0 0 108px;
+    opacity: 0.8;
+}
+.bottom-nav a .search-icon:hover{
+    opacity: 1;
+}
+.bottom-nav a .smith-icon{
+    width: 33px;
+    height: 40px;
+    position: absolute;
+    margin: 6px 0 0 183px;
+    border-radius: 15px;
+    border-style: inset;
+    opacity: 0.8;
+}
+.bottom-nav a .smith-icon:hover{
+    opacity: 1;
+}
+.bottom-nav a .notification-icon{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    margin: 6px 0 0 260px;
+    border-radius: 15px;
+    border-style: inset;
+    opacity: 0.8;
+}
+.bottom-nav a .notification-icon:hover{
+    opacity: 1;
+}
+.notice{
+    background-color: green;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    border-radius: 40px;
+    margin-left: 274px;
+    margin-top: 6px;
+}
+.notice-num{
+    font-size: 8px;
+    color: #fff;
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+.bottom-menu{
+    position: absolute;
+    height: 10px;
+    width: 30px;
+    margin: 19px 0 0 345px;
+}
+
+
+</style>
+<body>
+	<div class="outline">
+		<a href="#"><img src="https://i.imgur.com/lGj4wbr.png" class="fbk"></a>
+		<a href="#"><img src="https://i.imgur.com/5prJWJC.png" class="twi"></a>
+		<a href="#"><img src="https://i.imgur.com/TVswxCT.png" class="lin"></a>
+			<a href="#">
+				<div class="menu-icon">
+					<div class="line">
+						<hr class="hr1"><br />
+						<hr class="hr2"><br />
+						<hr class="hr3">
+					</div>
+				</div>
+			</a>
+					<div class="img">
+						<img src="https://i.imgur.com/kLrEg2G.png">
+						<div class="author">
+							<b>William Smith</b><br />
+							<div class="job" style="font-size: 15px">Creative Designer
+							</div>
+							<div class="follow" style="color: #ccc; font-size: 11px">
+								follow him
+							</div>
+							<div class="follow-line">
+								<hr>
+                            </div>
+                            <div class="follow-line2">
+                                <hr>
+                            </div>
+						</div>
+					</div>
+					<div class="response-div">
+						<div class="responses">
+							<div class="first">
+								<div class="num"><b>150</b></div>
+								<a href="#"><div class="visitor"><b>Vanu visite</b></div></a>
+							</div>
+							<div class="second">
+								<div class="num"><b>140</b></div>
+								<a href="#"><div class="place"><b>Place stay</b></div></a>
+							</div>
+							<div class="third">
+								<div class="num"><b>45</b></div>
+								<a href="#"><div class="review"><b>Reviews</b></div></a>
+							</div>
+						</div>
+					<!--	<div class="box" id="box1"></div>
+						<div class="box" id="box2"></div>
+						<div class="box" id="box3"></div> -->
+					</div>
+					<div class="interest"><p><strong>Intarested</strong></p></div>
+					<div  class="horizontal-line"><hr></div>
+					
+							<div class="content">
+								<a href="#">
+									<div class="restaurant">
+										<p>Restaurant</p>
+									</div>
+									</a>
+								<a href="#">
+									<div class="hostel">
+										<p>Stay hostel</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="shopping">
+										<p>Shopping Mall</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="visit">
+										<p>Visiting Places</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="art">
+										<p>Art & gallery</p>
+									</div>
+								</a>
+								<a href="#">
+									<div class="photo">
+										<p>Photograhy</p>
+									</div>
+								</a>
+							</div>
+				<nav class="bottom-nav">
+					<!-- <div class="bottom-content"> -->
+						<div class="notice">
+							<div class="notice-num">276</div>
+						</div>
+							<a href="#"><img src="https://i.imgur.com/3E1SBly.png" class="home-icon"></a>
+							<a href="#"><img src="https://i.imgur.com/rhi9e5D.png" class="search-icon"></a>
+							<a href="#"><img src="https://i.imgur.com/kLrEg2G.png" class="smith-icon"></a>
+							<a href="#"><img src="https://i.imgur.com/GLlJmuw.png" class="notification-icon"></a>
+						
+						<a href="#">
+							<img src="https://i.imgur.com/QL0FD7F.png" class="bottom-menu">
+						</a>
+					<!-- </div> -->
+				</nav>
+	</div>
+</body>
+</html>
